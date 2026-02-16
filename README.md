@@ -1,2 +1,130 @@
-# TO-DO-List
-A simple and interactive To-Do List application built with HTML, CSS, and JavaScript. Users can add tasks and delete them instantly using a clean and responsive interface.
+📝 To-Do List Web App
+
+A simple and interactive To-Do List application built with HTML, CSS, and JavaScript.
+Users can add tasks and delete them instantly using a clean and responsive interface.
+
+This project demonstrates core DOM manipulation, event handling, and dynamic element creation in JavaScript.
+
+🚀 Features
+
+✅ Add new tasks
+
+❌ Delete individual tasks
+
+🎨 Clean and minimal UI
+
+⚡ Instant updates without page refresh
+
+🧠 Beginner-friendly JavaScript logic
+
+🛠 Technologies Used
+
+HTML → Structure of the app
+
+CSS → Styling and layout
+
+JavaScript → Functionality and interactivity
+
+📂 Project Structure
+todo-app/
+│
+├── index.html     # Main HTML structure
+├── style.css      # Styling and layout
+└── script.js      # App functionality (add + delete tasks)
+⚙️ How It Works
+
+User types a task in the input field.
+
+Clicking Add runs a JavaScript function.
+
+JavaScript:
+
+reads the input value
+
+creates a new list item (li)
+
+creates a delete button
+
+attaches the button to the task
+
+adds the task to the list
+
+Clicking Delete removes the specific task from the page.
+
+All elements are created dynamically using the DOM.
+
+💻 How to Run the Project
+Option 1 — Open directly
+
+Download or clone the project.
+
+Open index.html in your browser.
+
+Option 2 — Using VS Code (recommended)
+
+Open project folder in VS Code.
+
+Install Live Server extension.
+
+Right-click index.html → Open with Live Server.
+
+📸 UI Overview
+
+Input field for entering tasks
+
+Add button
+
+Task list
+
+Delete button beside each task
+
+(You can add screenshots here if uploading to GitHub.)
+
+🎯 Learning Objectives
+
+This project helps practice:
+
+DOM selection (getElementById)
+
+Reading input values
+
+Creating elements dynamically (createElement)
+
+Attaching elements (appendChild)
+
+Event handling (onclick)
+
+Removing elements (remove)
+
+Basic UI styling with CSS
+
+🔮 Future Improvements
+
+Possible upgrades:
+
+✔ Mark tasks as completed
+
+✔ Edit tasks
+
+✔ Delete all tasks
+
+✔ Save tasks using local storage
+
+✔ Drag and reorder tasks
+
+✔ Dark mode
+
+✔ Mobile responsive design
+
+📘 Example Usage
+User types: "Buy groceries"
+Clicks Add
+Task appears in list with Delete button
+Clicks Delete → task disappears
+👨‍💻 Author
+
+Created as a beginner JavaScript DOM practice project.
+
+📄 License
+
+Free to use and modify for learning purposes.
