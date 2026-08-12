@@ -1,23 +1,23 @@
-📝 To-Do List Web App
+ To-Do List Web App
 
 A simple and interactive To-Do List application built with HTML, CSS, and JavaScript.
 Users can add tasks and delete them instantly using a clean and responsive interface.
 
 This project demonstrates core DOM manipulation, event handling, and dynamic element creation in JavaScript.
 
-🚀 Features
+ Features
 
-✅ Add new tasks
+ Add new tasks
 
-❌ Delete individual tasks
+ Delete individual tasks
 
-🎨 Clean and minimal UI
+ Clean and minimal UI
 
-⚡ Instant updates without page refresh
+ Instant updates without page refresh
 
-🧠 Beginner-friendly JavaScript logic
+ Beginner-friendly JavaScript logic
 
-🛠 Technologies Used
+ Technologies Used
 
 HTML → Structure of the app
 
@@ -25,7 +25,7 @@ CSS → Styling and layout
 
 JavaScript → Functionality and interactivity
 
-📂 Project Structure
+ Project Structure
 todo-app/
 │
 ├── index.html     # Main HTML structure
@@ -68,7 +68,7 @@ Install Live Server extension.
 
 Right-click index.html → Open with Live Server.
 
-📸 UI Overview
+ UI Overview
 
 Input field for entering tasks
 
@@ -80,7 +80,7 @@ Delete button beside each task
 
 (You can add screenshots here if uploading to GitHub.)
 
-🎯 Learning Objectives
+ Learning Objectives
 
 This project helps practice:
 
@@ -116,15 +116,15 @@ Possible upgrades:
 
 ✔ Mobile responsive design
 
-📘 Example Usage
+ Example Usage
 User types: "Buy groceries"
 Clicks Add
 Task appears in list with Delete button
 Clicks Delete → task disappears
-👨‍💻 Author
+ Author
 
 Created as a beginner JavaScript DOM practice project.
 
-📄 License
+ License
 
 Free to use and modify for learning purposes.
