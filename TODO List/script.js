@@ -1,22 +1,54 @@
-function addTask() {
-  const input = document.getElementById("taskInput");
-  const taskText = input.value;
+document.addEventListener("DOMContentLoaded", () => {
+  const todoInput = document.getElementById("todo-input");
+  const addTaskButton = document.getElementById("add-task-btn");
+  const todoList = document.getElementById("todo-list");
 
-  if (taskText === "") return;
+  let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-  const li = document.createElement("li");
-  li.textContent = taskText;
+  tasks.forEach((task) => renderTask(task));
 
-  const deleteBtn = document.createElement("button");
-  deleteBtn.textContent = "Delete";
-  deleteBtn.classList.add("delete-btn");
+  addTaskButton.addEventListener("click", () => {
+    const taskText = todoInput.value.trim();
+    if (taskText === "") return;
 
-  deleteBtn.onclick = function () {
-    li.remove();
-  };
+    const newTask = {
+      id: Date.now(),
+      text: taskText,
+      completed: false,
+    };
+    tasks.push(newTask);
+    saveTasks();
+    renderTask(newTask);
+    todoInput.value = ""; //clear input
+    console.log(tasks);
+  });
 
-  li.appendChild(deleteBtn);
-  document.getElementById("taskList").appendChild(li);
+  function renderTask(task) {
+    const li = document.createElement("li");
+    li.setAttribute("data-id", task.id);
+    if (task.completed) li.classList.add("completed");
+    li.innerHTML = `
+    <span>${task.text}</span>
+    <button>delete</button>
+    `;
+    li.addEventListener("click", (e) => {
+      if (e.target.tagName === "BUTTON") return;
+      task.completed = !task.completed;
+      li.classList.toggle("completed");
+      saveTasks();
+    });
 
- input.value = "";
-}
+    li.querySelector("button").addEventListener("click", (e) => {
+      e.stopPropagation(); //prevent toggle from firing
+      tasks = tasks.filter((t) => t.id === task.id);
+      li.remove();
+      saveTasks();
+    });
+
+    todoList.appendChild(li);
+  }
+
+  function saveTasks() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }
+});
