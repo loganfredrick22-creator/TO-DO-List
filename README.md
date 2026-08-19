@@ -53,7 +53,7 @@ Clicking Delete removes the specific task from the page.
 
 All elements are created dynamically using the DOM.
 
-💻 How to Run the Project
+ How to Run the Project
 Option 1 — Open directly
 
 Download or clone the project.
