@@ -31,7 +31,7 @@ todo-app/
 ├── index.html     # Main HTML structure
 ├── style.css      # Styling and layout
 └── script.js      # App functionality (add + delete tasks)
-⚙️ How It Works
+ How It Works
 
 User types a task in the input field.
 
@@ -98,13 +98,13 @@ Removing elements (remove)
 
 Basic UI styling with CSS
 
-🔮 Future Improvements
+ Future Improvements
 
 Possible upgrades:
 
-✔ Mark tasks as completed
+ Mark tasks as completed
 
-✔ Edit tasks
+ Edit tasks
 
 ✔ Delete all tasks
 
